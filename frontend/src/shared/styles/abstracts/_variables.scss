@@ -1,3 +1,31 @@
-$globalVariableExample: 5;
-$minViewportWidth: 360; // used in @mixin fluid-text
-$maxViewportWidth: 1920; // used in @mixin fluid-text
+// Color Primitives
+$blue-light: #37EBFF;
+$blue-primary: #0541f0;
+$blue-dark: #0A1E64;
+$gray-dark: #505569;
+$white: #FFFFFF;
+
+// Semantic Tokens
+$primary: $blue-primary;
+$secondary: $blue-light;
+$background: $white;
+
+$text-primary: $gray-dark;
+$text-inverted: $white;
+
+// Gradients
+@mixin gradient-brand {
+  background: linear-gradient(
+      135deg,
+      $blue-light 0%,
+      $blue-primary 100%
+  );
+}
+
+// States
+$hover: rgba($blue-primary, 0.15);
+$active: rgba($blue-dark, 0.3);
+
+// UI Elements
+$border: rgba($gray-dark, 0.2);
+$shadow: 0 4px 20px rgba($blue-dark, 0.1);
