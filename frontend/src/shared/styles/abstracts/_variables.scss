@@ -1,31 +1,170 @@
-// Color Primitives
-$blue-light: #37EBFF;
-$blue-primary: #0541f0;
-$blue-dark: #0A1E64;
-$gray-dark: #505569;
-$white: #FFFFFF;
+@use './functions' as *;
+$minViewportWidth: 360; // used in @mixin fluid-text
+$maxViewportWidth: 1920; // used in @mixin fluid-text
 
-// Semantic Tokens
-$primary: $blue-primary;
-$secondary: $blue-light;
+// ============ PRIMITIVES ============
+
+$blue-light: (
+  100: #E6FAFF,
+  200: #B3F1FF,
+  300: #80E8FF,
+  400: #4DDFFF,
+  500: #37EBFF, // Base
+  600: #1AD3E6,
+  700: #00B7CC,
+  800: #0095A6,
+  900: #006B80
+);
+
+$blue-primary: (
+  100: #E6EDFF,
+  200: #B3C6FF,
+  300: #809FFF,
+  400: #4D78FF,
+  500: #0541F0, // Base
+  600: #0033CC,
+  700: #0026A6,
+  800: #001A80,
+  900: #001059
+);
+
+$blue-dark: (
+  100: #E6E9F5,
+  200: #B3BCE6,
+  300: #808FD7,
+  400: #4D62C8,
+  500: #0A1E64, // Base
+  600: #081A55,
+  700: #061646,
+  800: #041237,
+  900: #020E28
+);
+
+$gray: (
+  100: #F5F6FA,
+  200: #E1E3EB,
+  300: #C2C5D6,
+  400: #A0A4B8,
+  500: #505569, // Base
+  600: #3E4255,
+  700: #2C3041,
+  800: #1A1D2D,
+  900: #080B19
+);
+
+$red: (
+  100: #FFEBEE,
+  200: #FFCDD2,
+  300: #EF9A9A,
+  400: #E57373,
+  500: #F44336, // Base error
+  600: #E53935,
+  700: #D32F2F,
+  800: #C62828,
+  900: #B71C1C
+);
+
+$green: (
+  100: #E8F5E9,
+  200: #C8E6C9,
+  300: #A5D6A7,
+  400: #81C784,
+  500: #4CAF50, // Base success
+  600: #43A047,
+  700: #388E3C,
+  800: #2E7D32,
+  900: #1B5E20
+);
+
+$orange: (
+  100: #FFF3E0,
+  200: #FFE0B2,
+  300: #FFCC80,
+  400: #FFB74D,
+  500: #FF9800, // Base warning
+  600: #FB8C00,
+  700: #F57C00,
+  800: #EF6C00,
+  900: #E65100
+);
+
+$yellow: (
+  100: #FFFDE7,
+  200: #FFF9C4,
+  300: #FFF59D,
+  400: #FFF176,
+  500: #FFEB3B, // Base
+  600: #FDD835,
+  700: #FBC02D,
+  800: #F9A825,
+  900: #F57F17
+);
+
+// White/Black (fixed)
+$white: #FFFFFF;
+$black: #000000;
+
+// ============ TOKENS ============
+$primary: map-get($blue-primary, 500);
+$secondary: map-get($blue-light, 500);
 $background: $white;
 
-$text-primary: $gray-dark;
+// System colors
+$success: map-get($green, 500);
+$warning: map-get($orange, 500);
+$error: map-get($red, 500);
+$info: map-get($blue-light, 500);
+
+// Text colors
+$text-primary: map-get($gray, 500);
+$text-secondary: map-get($gray, 400);
 $text-inverted: $white;
 
-// Gradients
-@mixin gradient-brand {
-  background: linear-gradient(
-      135deg,
-      $blue-light 0%,
-      $blue-primary 100%
-  );
-}
+// Statements
+$hover: rgba($primary, 0.15);
+$active: rgba(map-get($blue-dark, 500), 0.3);
 
-// States
-$hover: rgba($blue-primary, 0.15);
-$active: rgba($blue-dark, 0.3);
+// Border/Shadow
+$border: rgba(map-get($gray, 500), 0.2);
+$shadow-sm: 0 2px 8px rgba(map-get($blue-dark, 500), 0.1);
+$shadow-md: 0 4px 20px rgba(map-get($blue-dark, 500), 0.15);
+$shadow-lg: 0 8px 30px rgba(map-get($blue-dark, 500), 0.2);
 
-// UI Elements
-$border: rgba($gray-dark, 0.2);
-$shadow: 0 4px 20px rgba($blue-dark, 0.1);
+// ============ UNITARY FUNCTIONS ============
+
+
+// ============ Примеры использования ============
+//.button {
+//  &-primary {
+//    @include gradient-brand;
+//    color: $text-inverted;
+//
+//    &:hover {
+//      background: color($blue-primary, 600);
+//    }
+//  }
+//
+//  &-error {
+//    background: $error;
+//    color: $white;
+//
+//    &:hover {
+//      background: color($red, 600);
+//    }
+//  }
+//}
+//
+//.alert {
+//  &-success {
+//    background: color($green, 100);
+//    border-left: 4px solid $success;
+//    color: color($green, 800);
+//  }
+//
+//  &-warning {
+//    background: color($orange, 100);
+//    border-left: 4px solid $warning;
+//    color: color($orange, 800);
+//  }
+//}
+

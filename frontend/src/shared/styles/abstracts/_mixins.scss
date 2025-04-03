@@ -1,7 +1,16 @@
+// Gradient
+@mixin gradient-brand {
+  background: linear-gradient(
+      135deg,
+      map-get($blue-light, 500) 0%,
+      map-get($blue-primary, 500) 100%
+  );
+}
+
 /**
 * Adapted media for responsive web-applications (check @styles/base/_breakpoints.scss)
 */
-@use './variables' as var;
+@use './variables' as *;
 @use 'sass:math';
 @use '../base/breakpoints' as bp;
 @use 'sass:map';
@@ -30,8 +39,8 @@
 * Used for text in responsive web-applications
 */
 @mixin fluid-text($min: 16, $max: 48) {
-  $minViewportWidth: var.$minViewportWidth;
-  $maxViewportWidth: var.$maxViewportWidth;
+  $minViewportWidth: $minViewportWidth;
+  $maxViewportWidth: $maxViewportWidth;
 
   $minSize: math.div($min, 16);
   $maxSize: math.div($max, 16);
