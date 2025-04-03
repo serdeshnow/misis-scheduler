@@ -1,11 +1,11 @@
 // Gradient
-@mixin gradient-brand {
-  background: linear-gradient(
-      135deg,
-      map-get($blue-light, 500) 0%,
-      map-get($blue-primary, 500) 100%
-  );
-}
+//@mixin gradient-brand {
+//  background: linear-gradient(
+//      135deg,
+//      map-get($blue-light, 500) 0%,
+//      map-get($blue-primary, 500) 100%
+//  );
+//}
 
 /**
 * Adapted media for responsive web-applications (check @styles/base/_breakpoints.scss)
