@@ -1,10 +1,12 @@
 .navbar {
+  align-items: center;
   color: $cyan-500;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 1rem;
   width: 250px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 1rem;
   background: $blue-dark-500;
   transition: width 0.3s ease;
@@ -14,11 +16,37 @@
   }
 }
 
-.toggleButton {
+.username {
+  color: $success;
+}
+
+// .roundBtn {
+//  // aspect-ratio: 1/1;
+//  align-self: center;
+// }
+
+.toggleBtn {
   background: #34495e;
   border: none;
   color: white;
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 4px;
+}
+
+.logoutBtn {
+  margin-top: auto;
+}
+
+
+.rotate180 {
+  transform: rotate(-180deg);
+}
+
+.yellow {
+  color: $yellow-500;
+}
+
+.green {
+  color: $green-500;
 }

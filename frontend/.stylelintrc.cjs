@@ -43,7 +43,6 @@ module.exports = {
     'scss/selector-no-redundant-nesting-selector': true,
 
     /* SCSS - comments */
-    'scss/double-slash-comment-whitespace-inside': 'always', // Whitespace after `//`
     'scss/comment-no-empty': true, // Disallow empty comments
     'scss/comment-no-loud': null, // Allow `/* */` and `//`
 
