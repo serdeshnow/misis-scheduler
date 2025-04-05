@@ -3,18 +3,38 @@ $minViewportWidth: 360; // used in @mixin fluid-text
 $maxViewportWidth: 1920; // used in @mixin fluid-text
 
 // ============ PRIMITIVES ============
-// Blue
-$blue-100: #E6FAFF;
-$blue-200: #B3F1FF;
-$blue-300: #80E8FF;
-$blue-400: #4DDFFF;
-$blue-500: #37EBFF; // Base
-$blue-600: #1AD3E6;
-$blue-700: #00B7CC;
-$blue-800: #0095A6;
-$blue-900: #006B80;
+// Cyan
+$cyan-100: #E6FAFF;
+$cyan-200: #B3F1FF;
+$cyan-300: #80E8FF;
+$cyan-400: #4DDFFF;
+$cyan-500: #37EBFF; // Base
+$cyan-600: #1AD3E6;
+$cyan-700: #00B7CC;
+$cyan-800: #0095A6;
+$cyan-900: #006B80;
 
+// Blue
+$blue-100: #E6EDFF;
+$blue-200: #B3C6FF;
+$blue-300: #809FFF;
+$blue-400: #4D78FF;
+$blue-500: #0541F0; // Base
+$blue-600: #0033CC;
+$blue-700: #0026A6;
+$blue-800: #001A80;
+$blue-900: #001059;
+
+// Blue dark
+$blue-dark-100: #E6E9F5;
+$blue-dark-200: #B3BCE6;
+$blue-dark-300: #808FD7;
+$blue-dark-400: #4D62C8;
 $blue-dark-500: #0A1E64; // Base
+$blue-dark-600: #081A55;
+$blue-dark-700: #061646;
+$blue-dark-800: #041237;
+$blue-dark-900: #020E28;
 
 // Gray
 $gray-100: #F5F6FA;
