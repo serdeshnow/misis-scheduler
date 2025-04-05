@@ -13,16 +13,16 @@
 }
 
 // Color generator func
-@each $name, $color-map in (blue-light, blue-primary, blue-dark, gray, red, green, orange, yellow, gold) {
-  @each $level, $value in $color-map {
-    .bg-#{$name}-#{$level} {
-      background-color: $value;
-    }
-    .text-#{$name}-#{$level} {
-      color: $value;
-    }
-    .border-#{$name}-#{$level} {
-      border-color: $value;
-    }
-  }
-}
+//@each $name, $color-map in (blue-light, blue-primary, blue-dark, gray, red, green, orange, yellow, gold) {
+//  @each $level, $value in $color-map {
+//    .bg-#{$name}-#{$level} {
+//      background-color: $value;
+//    }
+//    .text-#{$name}-#{$level} {
+//      color: $value;
+//    }
+//    .border-#{$name}-#{$level} {
+//      border-color: $value;
+//    }
+//  }
+//}
