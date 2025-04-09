@@ -6,7 +6,7 @@ import { Navbar } from '@widgets/navbar';
 export const AppLayout: React.FC = () => {
     return (
         <section className={s.layout}>
-          <Navbar/>
+          {/*<Navbar/>*/}
           <main className={s.main}>
             <Outlet/>
           </main>

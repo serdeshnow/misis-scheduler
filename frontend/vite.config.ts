@@ -14,10 +14,10 @@ export default defineConfig(({mode}) => {
       react(),
       svgr(),
       tsconfigPaths(),
-      StylelintPlugin({
-        fix: true,
-        cache: false,
-      }),
+      // StylelintPlugin({
+      //   fix: true,
+      //   cache: false,
+      // }),
     ].filter(Boolean),
 
     resolve: {

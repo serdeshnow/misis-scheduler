@@ -28,6 +28,7 @@
     "@mui/icons-material": "7.0.1",
     "@mui/material": "7.0.1",
     "@reduxjs/toolkit": "2.5.1",
+    "@salutejs/client": "1.35.5",
     "antd": "5.24.6",
     "axios": "1.7.9",
     "classnames": "2.5.1",
