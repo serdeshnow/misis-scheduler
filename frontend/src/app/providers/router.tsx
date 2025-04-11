@@ -1,7 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router';
 import { AppLayout } from '@widgets/layout';
 import { HomePage } from '@pages/home';
-import {Bot} from "@features/bot/ui/Bot.tsx";
+import { Bot } from '@features/bot';
 // import { AboutPage } from '@/pages/about';
 
 export const router = createBrowserRouter([
@@ -11,13 +11,13 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage/>,
+        element: <HomePage />,
       },
       {
         path: '/sber',
-        element: <Bot/>
-      }
-    ]
+        element: <Bot />,
+      },
+    ],
   },
   // {
   //   path: '/',

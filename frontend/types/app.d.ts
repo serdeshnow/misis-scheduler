@@ -1,4 +1,4 @@
-// declare const _brand: unique symbol
+declare const _brand: unique symbol
 
 declare global {
   /**
@@ -11,8 +11,8 @@ declare global {
   // export type Values<T extends Record<string, unknown>> = T[Keys<T>]
   //
   // export type Indexed<K = string, T = unknown> = { [key: K]: T }
-  //
-  // export type Brand<K, T> = K & { [_brand]: T }
+
+  export type Brand<K, T> = K & { [_brand]: T }
 
   /**
    * Type aliases
@@ -20,18 +20,18 @@ declare global {
   // export type Phone = string
   //
   // export type Email = string
-  //
-  // export type Id = number
-  //
+
+  export type Id = number
+
   // export type DateIso = string
-  //
-  // export type Timestamp = number
-  //
+
+  export type Timestamp = number
+
   // export type Penny = number
-  //
-  // export type Url = string
-  //
-  // export type Color = string
+
+  export type Url = string
+
+  export type Color = string
 
   /**
    * Shared kernel

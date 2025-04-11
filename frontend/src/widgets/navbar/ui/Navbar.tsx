@@ -4,6 +4,7 @@ import cn from 'classnames';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
+import { Link } from 'react-router';
 // import { Logo } from '@shared/ui';
 
 export const Navbar: React.FC = () => {
@@ -36,6 +37,7 @@ export const Navbar: React.FC = () => {
         <li>subject 1</li>
         <li>subject 2</li>
         <li>subject 3</li>
+        <Link to={'/sber'}>SBER</Link>
       </ul>
 
 
