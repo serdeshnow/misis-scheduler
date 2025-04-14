@@ -15,7 +15,7 @@ export const ScheduleCard: React.FC<Props> = ({schedule}) => {
   const { name, image } = schedule;
 
   return (
-    <Link to={'/'} className={s.root}>
+    <Link to={'/schedule/1'} className={s.root}>
       <div className={s.imageContainer}>
         <div
           className={s.image}

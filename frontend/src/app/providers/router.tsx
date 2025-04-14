@@ -3,6 +3,7 @@ import { AppLayout } from '@widgets/layout';
 import { HomePage } from '@pages/home';
 import { Bot } from '@features/bot';
 import { AddSchedulePage } from '@pages/add-schedule';
+import { ScheduleTablePage } from '@pages/schedule-table';
 // import { AboutPage } from '@/pages/about';
 
 export const router = createBrowserRouter([
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
       {
         path: '/add-schedule',
         element: <AddSchedulePage />,
+      },
+      {
+        path: '/schedule/:id',
+        element: <ScheduleTablePage />,
       },
     ],
   },
