@@ -27,6 +27,9 @@ export const HomePage = () => {
       <Title>ВАШИ РАСПИСАНИЯ</Title>
       <div className={s.list}>
         <ScheduleCard schedule={SCHEDULE_CARD_MOCK} />
+        <ScheduleCard schedule={SCHEDULE_CARD_MOCK} />
+        <ScheduleCard schedule={SCHEDULE_CARD_MOCK} />
+        <ScheduleCard schedule={SCHEDULE_CARD_MOCK} />
       </div>
     </>
   );

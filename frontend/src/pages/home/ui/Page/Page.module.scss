@@ -1,6 +1,14 @@
 @use '@styles/abstracts/variables' as var;
 @use '@styles/abstracts/mixins' as mix;
 
+.list {
+  display: grid;
+  //height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
 .logo {
   height: 6rem;
   width: 6rem;

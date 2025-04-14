@@ -1,7 +1,30 @@
-root {
+.root {
+  display: flex;
+  width: 100%;
+  background: $blue-dark-400;
+  padding: 20px 40px;
+  border-radius: 10px;
 
+  &:hover {
+    color: $blue-300;
+  }
 }
 
 .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.title {
+  color: $white;
 
 }
