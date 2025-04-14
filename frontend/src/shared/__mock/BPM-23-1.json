@@ -1,0 +1,759 @@
+{
+  "success": true,
+  "schedule": [
+    {
+      "type": "ordinary",
+      "day": 0,
+      "order": 2,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Специальные главы математики для Computer Science (Практические)",
+      "teacher": [
+        "Шихеева В. В."
+      ],
+      "location": [
+        "Б-907"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 0,
+      "order": 3,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]",
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "Специальные главы математики для Computer Science (Лекционные)",
+      "teacher": [
+        "Шихеева В. В."
+      ],
+      "location": [
+        "А-308"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "english",
+      "day": 0,
+      "order": 4,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Иностранный язык (Практические)",
+      "teacher": [
+        ""
+      ],
+      "location": [
+        "Каф. ИЯКТ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 1,
+      "order": 2,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]",
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "Сетевые технологии (Лекционные)",
+      "teacher": [
+        "Крынецкая Г. С."
+      ],
+      "location": [
+        "Б-934"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 1,
+      "order": 3,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "1 п.г. Сетевые технологии (Лабораторные)",
+      "teacher": [
+        "Крынецкая Г. С."
+      ],
+      "location": [
+        "Б-901"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 1,
+      "order": 3,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "2 п.г. Сетевые технологии (Лабораторные)",
+      "teacher": [
+        "Крынецкая Г. С."
+      ],
+      "location": [
+        "Б-901"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 2,
+      "order": 1,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "ДПП ПП Основы и практики администрирования Astra Linux (Лекционные)",
+      "teacher": [
+        "Широков А. И."
+      ],
+      "location": [
+        "Б-934"
+      ],
+      "begins": "09:00",
+      "ends": "10:35",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 2,
+      "order": 2,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Математика (Практические)",
+      "teacher": [
+        "Родина Л. И."
+      ],
+      "location": [
+        "Л-631"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 2,
+      "order": 3,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Математика (Лекционные)",
+      "teacher": [
+        "Шамраева В. В."
+      ],
+      "location": [
+        "Л-740"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "english",
+      "day": 2,
+      "order": 4,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Иностранный язык (Практические)",
+      "teacher": [
+        ""
+      ],
+      "location": [
+        "Каф. ИЯКТ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 3,
+      "order": 3,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Алгоритмы дискретной математики (Лекционные)",
+      "teacher": [
+        "Ширкин С. В."
+      ],
+      "location": [
+        "Б-734"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 3,
+      "order": 4,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Безопасность жизнедеятельности (Практические)",
+      "teacher": [
+        "Чавкина Л. Ю."
+      ],
+      "location": [
+        "А-509"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 5,
+      "order": 1,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "ДПП ПП Создание клиент-серверных приложений: принципы и практики (Практические)",
+      "teacher": [
+        "Лыкошин А. С."
+      ],
+      "location": [
+        "Л-812-УВЦ"
+      ],
+      "begins": "09:00",
+      "ends": "10:35",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 5,
+      "order": 2,
+      "week": 0,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]",
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "ДПП ПП Создание клиент-серверных приложений: принципы и практики (Лекционные)",
+      "teacher": [
+        "Лыкошин А. С."
+      ],
+      "location": [
+        "Л-740"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 0,
+      "order": 2,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Специальные главы математики для Computer Science (Лекционные)",
+      "teacher": [
+        "Шихеева В. В."
+      ],
+      "location": [
+        "А-308"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 0,
+      "order": 3,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Сетевые технологии (Лекционные)",
+      "teacher": [
+        "Крынецкая Г. С."
+      ],
+      "location": [
+        "Б-934"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "english",
+      "day": 0,
+      "order": 4,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Иностранный язык (Практические)",
+      "teacher": [
+        ""
+      ],
+      "location": [
+        "Каф. ИЯКТ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 0,
+      "order": 5,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Цифровая экономика и процессное управление предприятием (Лекционные)",
+      "teacher": [
+        "Легошина О. Ю."
+      ],
+      "location": [
+        "Б-934"
+      ],
+      "begins": "16:20",
+      "ends": "17:55",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 1,
+      "order": 1,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "1 п.г. Безопасность жизнедеятельности (Лабораторные)",
+      "teacher": [
+        "Рыбичев А. А."
+      ],
+      "location": [
+        "Л-756"
+      ],
+      "begins": "09:00",
+      "ends": "10:35",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 1,
+      "order": 1,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "2 п.г. Безопасность жизнедеятельности (Лабораторные)",
+      "teacher": [
+        "Чавкина Л. Ю."
+      ],
+      "location": [
+        "Л-758"
+      ],
+      "begins": "09:00",
+      "ends": "10:35",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 1,
+      "order": 2,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Безопасность жизнедеятельности (Лекционные)",
+      "teacher": [
+        "Колесникова Л. А."
+      ],
+      "location": [
+        "Л-746"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 2,
+      "order": 1,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "ДПП ПП Основы и практики администрирования Astra Linux (Практические)",
+      "teacher": [
+        "Широков А. И."
+      ],
+      "location": [
+        "Б-823-УВЦ"
+      ],
+      "begins": "09:00",
+      "ends": "10:35",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 2,
+      "order": 2,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Математика (Практические)",
+      "teacher": [
+        "Родина Л. И."
+      ],
+      "location": [
+        "Л-631"
+      ],
+      "begins": "10:50",
+      "ends": "12:25",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 2,
+      "order": 3,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Операционные системы и среды (Лекционные)",
+      "teacher": [
+        "Широков А. И."
+      ],
+      "location": [
+        "Б-734"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "english",
+      "day": 2,
+      "order": 4,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Иностранный язык (Практические)",
+      "teacher": [
+        ""
+      ],
+      "location": [
+        "Каф. ИЯКТ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 3,
+      "order": 3,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "1 п.г. Операционные системы и среды (Лабораторные)",
+      "teacher": [
+        "Широков А. И."
+      ],
+      "location": [
+        "Б-825-УВЦ",
+        "Б-823-УВЦ"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 3,
+      "order": 3,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "2 п.г. Операционные системы и среды (Лабораторные)",
+      "teacher": [
+        "Широков А. И."
+      ],
+      "location": [
+        "Б-823-УВЦ",
+        "Б-825-УВЦ"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 3,
+      "order": 4,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Цифровая экономика и процессное управление предприятием (Практические)",
+      "teacher": [
+        "Легошина О. Ю."
+      ],
+      "location": [
+        "Б-529"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 4,
+      "order": 3,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Алгоритмы дискретной математики (Лекционные)",
+      "teacher": [
+        "Ширкин С. В."
+      ],
+      "location": [
+        "Б-734"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 4,
+      "order": 4,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]",
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "Алгоритмы дискретной математики (Практические)",
+      "teacher": [
+        "Ширкин С. В."
+      ],
+      "location": [
+        "Б-821-УВЦ",
+        "Б-819-УВЦ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 5,
+      "order": 3,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]",
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "Разработка клиент-серверных приложений (Лекционные)",
+      "teacher": [
+        "Лыкошин А. С."
+      ],
+      "location": [
+        "Л-740"
+      ],
+      "begins": "12:40",
+      "ends": "14:15",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 5,
+      "order": 4,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [1]"
+      ],
+      "subgroup": null,
+      "title": "1 п.г. Разработка клиент-серверных приложений (Лабораторные)",
+      "teacher": [
+        "Лыкошин А. С."
+      ],
+      "location": [
+        "Л-809-УВЦ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    },
+    {
+      "type": "ordinary",
+      "day": 5,
+      "order": 4,
+      "week": 1,
+      "institute": "ИКН",
+      "year": "2 курс",
+      "group": [
+        "БПМ-23-1 [2]"
+      ],
+      "subgroup": null,
+      "title": "2 п.г. Разработка клиент-серверных приложений (Лабораторные)",
+      "teacher": [
+        "Лыкошин А. С."
+      ],
+      "location": [
+        "Л-809-УВЦ"
+      ],
+      "begins": "14:30",
+      "ends": "16:05",
+      "id": null
+    }
+  ]
+}

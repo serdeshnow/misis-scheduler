@@ -1,89 +1,17 @@
-import React from 'react';
-import s from './Page.module.scss';
-import { Space, Table, Tag } from 'antd';
-import { Title } from '@shared/ui';
+import { groupSchedule } from '@/entities/schedule/lib/groupSchedule';
+import { ScheduleTable } from '@/widgets/schedule-table/ui/ScheduleTable';
+import { ScheduleRaw } from '@/entities/schedule/model/types';
 
-const {Column, ColumnGroup} = Table;
+import rawData from '@/shared/__mock/BPM-23-1.json';
 
-interface DataType {
-  key: React.Key;
-  firstName: string;
-  lastName: string;
-  age: number;
-  address: string;
-  tags: string[];
-}
+export const ScheduleTablePage = () => {
+  const upper = groupSchedule(rawData.schedule as ScheduleRaw[], 0);
+  const lower = groupSchedule(rawData.schedule as ScheduleRaw[], 1);
 
-const data: DataType[] = [
-  {
-    key: '1',
-    firstName: 'John',
-    lastName: 'Brown',
-    age: 32,
-    address: 'New York No. 1 Lake Park',
-    tags: ['nice', 'developer'],
-  },
-  {
-    key: '2',
-    firstName: 'Jim',
-    lastName: 'Green',
-    age: 42,
-    address: 'London No. 1 Lake Park',
-    tags: ['loser'],
-  },
-  {
-    key: '3',
-    firstName: 'Joe',
-    lastName: 'Black',
-    age: 32,
-    address: 'Sydney No. 1 Lake Park',
-    tags: ['cool', 'teacher'],
-  },
-];
-
-// https://ant.design/components/table
-
-export const ScheduleTablePage: React.FC = () => {
   return (
-    <section className={s.root}>
-      <Title>Расписание группы "ВЕНОМ"</Title>
-
-      <div className={s.content}>
-        <Table<DataType>
-          dataSource={data}
-          pagination={false}
-        >
-          <ColumnGroup title="Top Week" key="week">
-            <Column title="№"/>
-            <Column title="Time"/>
-
-
-            <ColumnGroup title="Monday" key="day">
-              <Column title="Subj. name"/>
-              <Column title="Subj. type"/>
-              <Column title="Subj. loc."/>
-            </ColumnGroup>
-          </ColumnGroup>
-        </Table>
-
-        <Table<DataType>
-          dataSource={data}
-          pagination={false}
-
-        >
-          <ColumnGroup title="Top Week" key="week">
-            <Column title="№"/>
-            <Column title="Time"/>
-
-
-            <ColumnGroup title="Monday" key="day">
-              <Column title="Subj. name"/>
-              <Column title="Subj. type"/>
-              <Column title="Subj. loc."/>
-            </ColumnGroup>
-          </ColumnGroup>
-        </Table>
-      </div>
-    </section>
+    <div style={{ padding: '16px' }}>
+      <ScheduleTable data={upper} title="Верхняя неделя" />
+      <ScheduleTable data={lower} title="Нижняя неделя" />
+    </div>
   );
-};
+}

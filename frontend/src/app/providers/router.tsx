@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router';
 import { AppLayout } from '@widgets/layout';
 import { HomePage } from '@pages/home';
 import { Bot } from '@features/bot';
@@ -9,23 +9,23 @@ import { ScheduleTablePage } from '@pages/schedule-table';
 export const router = createBrowserRouter([
   {
     path: '/',
-    element: <AppLayout />,
+    Component: AppLayout,
     children: [
       {
         index: true,
-        element: <HomePage />,
+        Component: HomePage,
       },
       {
         path: '/sber',
-        element: <Bot />,
+        Component: Bot,
       },
       {
         path: '/add-schedule',
-        element: <AddSchedulePage />,
+        Component: AddSchedulePage,
       },
       {
         path: '/schedule/:id',
-        element: <ScheduleTablePage />,
+        Component: ScheduleTablePage,
       },
     ],
   },

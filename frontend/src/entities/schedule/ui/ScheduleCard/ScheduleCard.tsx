@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import s from './ScheduleCard.module.scss';
 import cn from 'classnames';
 import { Button } from '@shared/ui';

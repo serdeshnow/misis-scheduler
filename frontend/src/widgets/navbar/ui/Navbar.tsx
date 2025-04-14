@@ -4,11 +4,13 @@ import cn from 'classnames';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
+import { useNavigate } from "react-router";
 // import { Logo } from '@shared/ui';
 
 export const Navbar: React.FC = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState<boolean>(false);
+  const navigate = useNavigate();
   // const USER_MOCK = {
   //   name: 'Username123',
   // }
@@ -26,6 +28,12 @@ export const Navbar: React.FC = () => {
       {/*)}*/}
       <IconButton
         onClick={() => setIsNavCollapsed(!isNavCollapsed)}
+      >
+        <ArrowBackRoundedIcon className={cn(isNavCollapsed && s.rotate180)} />
+      </IconButton>
+
+      <IconButton
+        onClick={() => navigate('/')}
       >
         <ArrowBackRoundedIcon className={cn(isNavCollapsed && s.rotate180)} />
       </IconButton>

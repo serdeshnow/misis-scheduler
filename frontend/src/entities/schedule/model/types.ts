@@ -4,6 +4,32 @@ export type ScheduleRole = 'teacher' | 'student';
 
 export type Course = '1' | '2' | '3' | '4' | '1master' | '2master';
 
+/** ====== GPT Version ====== */
+export interface ScheduleEntry {
+  title: string;
+  location: string;
+  teacher: string;
+}
+
+export type WeekType = 0 | 1;
+
+export interface ScheduleRaw {
+  day: number;
+  order: number;
+  week: WeekType;
+  title: string;
+  location: string[];
+  teacher: string[];
+}
+
+export type GroupedSchedule = {
+  [order: number]: {
+    [day: number]: ScheduleEntry[];
+  };
+};
+
+/** ====== =========== ====== */
+
 export interface Schedule {
   id: ScheduleId;
   // BUSINESS
