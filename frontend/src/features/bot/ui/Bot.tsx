@@ -4,7 +4,7 @@ import {
   createSmartappDebugger,
   AssistantAppState,
   AssistantViewItemBase,
-  Action
+  Action,
 } from '@salutejs/client';
 
 import './Bot.css';
@@ -61,14 +61,14 @@ const initializeAssistant = async (getState: () => AppState) => {
     });
   }
 
-  return createAssistant({ getState });
+  return createAssistant({getState});
 };
 
 export const Bot: React.FC = () => {
   const [notes, setNotes] = useState<Note[]>([{
     id: Math.random().toString(36).substring(7),
     title: 'тест',
-    completed: false
+    completed: false,
   }]);
   const [assistant, setAssistant] = useState<any>(null);
   const [assistantError, setAssistantError] = useState<string | null>(null);
@@ -76,7 +76,7 @@ export const Bot: React.FC = () => {
   const getStateForAssistant = useCallback((): AppState => {
     const state: AppState = {
       item_selector: {
-        items: notes.map(({ id, title }, index) => ({
+        items: notes.map(({id, title}, index) => ({
           number: index + 1,
           id,
           title,
@@ -84,7 +84,7 @@ export const Bot: React.FC = () => {
         ignored_words: [
           'добавить', 'установить', 'запиши', 'поставь', 'закинь', 'напомнить',
           'удалить', 'удали',
-          'выполни', 'выполнил', 'сделал'
+          'выполни', 'выполнил', 'сделал',
         ],
       },
     };
@@ -152,7 +152,7 @@ export const Bot: React.FC = () => {
     };
 
     const unsubscribe = assistant.sendData(data, (data: any) => {
-      const { type, payload } = data;
+      const {type, payload} = data;
       unsubscribe();
     });
   }, [assistant]);
@@ -184,15 +184,15 @@ export const Bot: React.FC = () => {
 
     setNotes(prevNotes =>
       prevNotes.map(note =>
-        note.id === action.id ? { ...note, completed: !note.completed } : note
-      )
+        note.id === action.id ? {...note, completed: !note.completed} : note,
+      ),
     );
   }, []);
 
   const delete_note = useCallback((action: AssistantAction) => {
     if (!action.id) return;
 
-    setNotes(prevNotes => prevNotes.filter(({ id }) => id !== action.id));
+    setNotes(prevNotes => prevNotes.filter(({id}) => id !== action.id));
   }, []);
 
   const dispatchAssistantAction = useCallback((action: AssistantAction) => {
@@ -218,10 +218,10 @@ export const Bot: React.FC = () => {
     <div className="bot-container">
       <TaskList
         items={notes}
-        onAdd={(note) => add_note({ type: 'add_note', note })}
+        onAdd={(note) => add_note({type: 'add_note', note})}
         onDone={(note) => {
           play_done_note(note.id);
-          done_note({ type: 'done_note', id: note.id });
+          done_note({type: 'done_note', id: note.id});
         }}
       />
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 import s from './ScheduleCard.module.scss';
 import cn from 'classnames';
 import { Button } from '@shared/ui';
@@ -15,7 +15,7 @@ export const ScheduleCard: React.FC<Props> = ({schedule}) => {
   const { name, image } = schedule;
 
   return (
-    <Link to={'/'}>
+    <Link to={'/'} className={s.root}>
       <div className={s.imageContainer}>
         <div
           className={s.image}

@@ -16,3 +16,36 @@ export interface Schedule {
 
   image?: Url;
 }
+
+
+export interface DaySchedule {
+  "type": "ordinary" | "english", // DayScheduleType
+  "day": number, // 0 - 5 // DayScheduleDay
+  "order": number, // 1 - 6 // DayScheduleOrder
+  "week": 0 | 1; // 0 | 1 // DayScheduleOrder
+  "institute": "ИКН", // literal type Institute
+  "year": "2 курс", // 2 курс //
+  "group": ["БПМ-23-1 [1]", "БПМ-23-1 [2]"], // Group[]
+  "subgroup": null, // Subgroup
+  "title": "Иностранный язык (Практические)", // DayScheduleTitle
+  "teacher": [""], // DayScheduleTeacher[]
+  "location": ["Каф. ИЯКТ"], // DayScheduleLocation[]
+  "begins": "14:30", // string
+  "ends": "16:05", // string
+  "id": null // null
+}
+
+// "type": "english",
+//   "day": 0,
+//   "order": 4,
+//   "week": 0,
+//   "institute": "ИКН",
+//   "year": "2 курс",
+//   "group": ["БПМ-23-1 [1]", "БПМ-23-1 [2]"],
+//   "subgroup": null,
+//   "title": "Иностранный язык (Практические)",
+//   "teacher": [""],
+//   "location": ["Каф. ИЯКТ"],
+//   "begins": "14:30",
+//   "ends": "16:05",
+//   "id": null

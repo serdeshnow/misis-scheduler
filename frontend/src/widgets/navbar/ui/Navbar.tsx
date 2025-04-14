@@ -4,7 +4,7 @@ import cn from 'classnames';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 // import { Logo } from '@shared/ui';
 
 export const Navbar: React.FC = () => {
@@ -30,7 +30,7 @@ export const Navbar: React.FC = () => {
         <ArrowBackRoundedIcon className={cn(isNavCollapsed && s.rotate180)} />
       </IconButton>
 
-      <p>Добавить расписание</p>
+      <Link to={'/add-schedule'}>Добавить расписание</Link>
 
 
       <ul>

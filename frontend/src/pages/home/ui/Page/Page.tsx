@@ -5,7 +5,7 @@
 // import s from './Page.module.scss';
 // import { env } from '@/shared/lib/env.ts';
 // import { useState } from 'react';
-
+import s from './Page.module.scss';
 import { Title } from '@shared/ui';
 import {ScheduleCard } from '@entities/schedule';
 
@@ -25,7 +25,9 @@ export const HomePage = () => {
   return (
     <>
       <Title>ВАШИ РАСПИСАНИЯ</Title>
-      <ScheduleCard schedule={SCHEDULE_CARD_MOCK} />
+      <div className={s.list}>
+        <ScheduleCard schedule={SCHEDULE_CARD_MOCK} />
+      </div>
     </>
   );
 };
