@@ -8,5 +8,17 @@
 .tables {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
+}
+
+.backBtn {
+  color: $gray-100;
+}
+
+.header {
+  display: flex;
+  gap: 10px;
 }
