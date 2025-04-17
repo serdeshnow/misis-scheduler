@@ -1,4 +1,8 @@
 .navbar {
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  left: 0;
   align-items: center;
   color: $cyan-500;
   display: flex;
@@ -6,7 +10,7 @@
   justify-content: flex-start;
   gap: 1rem;
   width: 250px;
-  min-height: 100vh;
+  height: 100vh;
   padding: 1rem;
   background: $blue-dark-500;
   transition: width 0.3s ease;

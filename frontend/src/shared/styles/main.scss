@@ -12,6 +12,8 @@
 @use '@styles/abstracts/mixins';
 @use '@styles/abstracts/classNames';
 
+@use '@styles/vendors/antdTable';
+
 @use '@styles/base/index';
 @use '@styles/base/normalize';
 @use '@styles/base/breakpoints';

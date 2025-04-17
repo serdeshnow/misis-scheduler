@@ -1,0 +1,26 @@
+/* Базовые стили таблицы */
+.ant-table {
+  // Ячейка
+  td.ant-table-cell {
+    padding: 8px !important;
+  }
+
+  // Заголовок
+  th.ant-table-cell {
+    padding: 12px !important;
+  }
+}
+
+/* Компактный режим таблицы */
+.ant-table-small {
+  // Ячейка
+  td.ant-table-cell {
+    padding: 4px 8px !important;
+  }
+
+  // Заголовок
+  th.ant-table-cell {
+    padding: 8px 12px !important;
+  }
+}
+

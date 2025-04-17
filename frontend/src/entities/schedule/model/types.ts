@@ -8,10 +8,10 @@ export type Course = '1' | '2' | '3' | '4' | '1master' | '2master';
 export interface ScheduleEntry {
   title: string;
   location: string;
-  teacher: string;
+  type: string;
 }
 
-export type WeekType = 0 | 1;
+// export type WeekType = 0 | 1;
 
 export interface ScheduleRaw {
   day: number;
@@ -27,6 +27,10 @@ export type GroupedSchedule = {
     [day: number]: ScheduleEntry[];
   };
 };
+
+/** ====== =========== ====== */
+
+export type WeekType = 0 | 1;
 
 /** ====== =========== ====== */
 

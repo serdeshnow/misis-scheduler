@@ -9,7 +9,7 @@ import { useNavigate } from "react-router";
 // import { Logo } from '@shared/ui';
 
 export const Navbar: React.FC = () => {
-  const [isNavCollapsed, setIsNavCollapsed] = useState<boolean>(false);
+  const [isNavCollapsed, setIsNavCollapsed] = useState<boolean>(true);
   const navigate = useNavigate();
   // const USER_MOCK = {
   //   name: 'Username123',
