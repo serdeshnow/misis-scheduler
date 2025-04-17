@@ -72,7 +72,7 @@ export const Navbar: React.FC = () => {
       </Link>
 
       <h3>Группы</h3>
-      <hr className={s.hr}/>
+      <hr className={cn('hr')}/>
       <ul className={s.list}>
         {MOCK_LIST_ITEMS.map(schedule => (
           <Link className={s.itemLink} to={schedule.path}>
@@ -83,7 +83,7 @@ export const Navbar: React.FC = () => {
       </ul>
 
       <h3>Преподаватели</h3>
-      <hr className={s.hr}/>
+      <hr className={cn('hr')}/>
       <ul className={s.list}>
         {MOCK_LIST_ITEMS.map(schedule => (
           <Link className={s.itemLink} to={schedule.path}>
