@@ -4,7 +4,6 @@ import cn from 'classnames';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import IconButton from '@mui/material/IconButton';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import { Link } from 'react-router';
 import { useNavigate } from 'react-router';
@@ -52,27 +51,30 @@ export const Navbar: React.FC = () => {
       {/*    <h3 className={s.username}>{user.name}</h3>*/}
       {/*  </>*/}
       {/*)}*/}
-      <IconButton
+      <Button
+        className={s.toggleBtn}
+        variant="transparent"
         onClick={() => setIsNavCollapsed(!isNavCollapsed)}
-      >
-        <MenuRoundedIcon className={s.light} />
-      </IconButton>
+        endIcon={<MenuRoundedIcon className={s.light} />}>
+        {!isNavCollapsed && 'SHEDULER APP'}
+      </Button>
 
-      <IconButton
+      <Button
+        className={s.toggleBtn}
+        variant="transparent"
         onClick={() => navigate('/')}
-      >
-        <HomeRoundedIcon className={s.light} />
-      </IconButton>
+        endIcon={<HomeRoundedIcon className={s.light} />}>
+        {!isNavCollapsed && 'Домашняя'}
+      </Button>
 
       <Link to={'/add-schedule'}>
         <Button variant="transparent" endIcon={<AddRoundedIcon />}>
           {!isNavCollapsed && 'Добавить расписание'}
         </Button>
-
       </Link>
 
       <h3>Группы</h3>
-      <hr className={cn('hr')}/>
+      <hr className={cn('hr')} />
       <ul className={s.list}>
         {MOCK_LIST_ITEMS.map(schedule => (
           <Link className={s.itemLink} to={schedule.path}>
@@ -83,7 +85,7 @@ export const Navbar: React.FC = () => {
       </ul>
 
       <h3>Преподаватели</h3>
-      <hr className={cn('hr')}/>
+      <hr className={cn('hr')} />
       <ul className={s.list}>
         {MOCK_LIST_ITEMS.map(schedule => (
           <Link className={s.itemLink} to={schedule.path}>

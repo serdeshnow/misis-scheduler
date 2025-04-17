@@ -30,12 +30,7 @@
 // }
 
 .toggleBtn {
-  background: #34495e;
-  border: none;
-  color: white;
-  cursor: pointer;
-  padding: 0.5rem;
-  border-radius: 4px;
+  justify-content: flex-start;
 }
 
 .logoutBtn {
