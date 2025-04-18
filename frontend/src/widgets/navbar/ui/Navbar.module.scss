@@ -24,10 +24,9 @@
   color: $success;
 }
 
-// .roundBtn {
-//  // aspect-ratio: 1/1;
-//  align-self: center;
-// }
+.navBtn {
+  justify-content: flex-start !important;
+}
 
 .toggleBtn {
   justify-content: flex-start;

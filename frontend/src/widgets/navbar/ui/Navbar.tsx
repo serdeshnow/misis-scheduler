@@ -5,9 +5,11 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
+import GroupsRoundedIcon from '@mui/icons-material/GroupsRounded';
+import SchoolRoundedIcon from '@mui/icons-material/SchoolRounded';
 import { Link } from 'react-router';
 import { useNavigate } from 'react-router';
-import { Button } from '@shared/ui';
+import { NavbarButton } from '@shared/ui';
 // import { Logo } from '@shared/ui';
 
 export const Navbar: React.FC = () => {
@@ -51,29 +53,31 @@ export const Navbar: React.FC = () => {
       {/*    <h3 className={s.username}>{user.name}</h3>*/}
       {/*  </>*/}
       {/*)}*/}
-      <Button
-        className={s.toggleBtn}
-        variant="transparent"
+      <NavbarButton
+        icon={<MenuRoundedIcon className={s.light} />}
+        collapsed={isNavCollapsed}
         onClick={() => setIsNavCollapsed(!isNavCollapsed)}
-        endIcon={<MenuRoundedIcon className={s.light} />}>
-        {!isNavCollapsed && 'SHEDULER APP'}
-      </Button>
-
-      <Button
-        className={s.toggleBtn}
-        variant="transparent"
+        text={'SHEDULER APP'}
+      />
+      <NavbarButton
+        icon={<HomeRoundedIcon className={s.light} />}
+        collapsed={isNavCollapsed}
         onClick={() => navigate('/')}
-        endIcon={<HomeRoundedIcon className={s.light} />}>
-        {!isNavCollapsed && 'Домашняя'}
-      </Button>
+        text={'Домашняя'}
+      />
+      <NavbarButton
+        icon={<AddRoundedIcon className={s.light} />}
+        collapsed={isNavCollapsed}
+        to={'/add-schedule'}
+        text={'Добавить расписание'}
+      />
 
-      <Link to={'/add-schedule'}>
-        <Button variant="transparent" endIcon={<AddRoundedIcon />}>
-          {!isNavCollapsed && 'Добавить расписание'}
-        </Button>
-      </Link>
-
-      <h3>Группы</h3>
+      <NavbarButton
+        isInteractive={false}
+        icon={<GroupsRoundedIcon className={s.light} />}
+        collapsed={isNavCollapsed}
+        text={'Группы'}
+      />
       <hr className={cn('hr')} />
       <ul className={s.list}>
         {MOCK_LIST_ITEMS.map(schedule => (
@@ -84,7 +88,12 @@ export const Navbar: React.FC = () => {
         ))}
       </ul>
 
-      <h3>Преподаватели</h3>
+      <NavbarButton
+        isInteractive={false}
+        icon={<SchoolRoundedIcon className={s.light} />}
+        collapsed={isNavCollapsed}
+        text={'Преподаватели'}
+      />
       <hr className={cn('hr')} />
       <ul className={s.list}>
         {MOCK_LIST_ITEMS.map(schedule => (
@@ -96,10 +105,12 @@ export const Navbar: React.FC = () => {
       </ul>
 
 
-      <Button className={s.logoutBtn} variant="transparent"
-              endIcon={<LogoutRoundedIcon className={s.light} />}>
-        {!isNavCollapsed && 'Выйти'}
-      </Button>
+      <NavbarButton
+        className={s.logoutBtn}
+        icon={<LogoutRoundedIcon className={s.light} />}
+        collapsed={isNavCollapsed}
+        text={'Выйти'}
+      />
     </nav>
   );
 };
