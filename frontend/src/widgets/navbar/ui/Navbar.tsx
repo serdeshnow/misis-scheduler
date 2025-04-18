@@ -72,37 +72,41 @@ export const Navbar: React.FC = () => {
         text={'Добавить расписание'}
       />
 
-      <NavbarButton
-        isInteractive={false}
-        icon={<GroupsRoundedIcon className={s.light} />}
-        collapsed={isNavCollapsed}
-        text={'Группы'}
-      />
-      <hr className={cn('hr')} />
-      <ul className={s.list}>
-        {MOCK_LIST_ITEMS.map(schedule => (
-          <Link className={s.itemLink} to={schedule.path}>
-            <div className={s.itemIcon}>{calculateIcon(schedule.title)}</div>
-            {!isNavCollapsed && <span className={s.itemTitle}>{schedule.title}</span>}
-          </Link>
-        ))}
-      </ul>
+      <div className={s.scheduleList}>
+        <NavbarButton
+          isInteractive={false}
+          icon={<GroupsRoundedIcon className={s.light} />}
+          collapsed={isNavCollapsed}
+          text={'Группы'}
+        />
+        <hr className={cn('hr')} />
+        <ul className={s.list}>
+          {MOCK_LIST_ITEMS.map(schedule => (
+            <Link className={s.itemLink} to={schedule.path}>
+              <div className={s.itemIcon}>{calculateIcon(schedule.title)}</div>
+              {!isNavCollapsed && <span className={s.itemTitle}>{schedule.title}</span>}
+            </Link>
+          ))}
+        </ul>
+      </div>
 
-      <NavbarButton
-        isInteractive={false}
-        icon={<SchoolRoundedIcon className={s.light} />}
-        collapsed={isNavCollapsed}
-        text={'Преподаватели'}
-      />
-      <hr className={cn('hr')} />
-      <ul className={s.list}>
-        {MOCK_LIST_ITEMS.map(schedule => (
-          <Link className={s.itemLink} to={schedule.path}>
-            <div className={s.itemIcon}>{calculateIcon(schedule.title)}</div>
-            {!isNavCollapsed && <span className={s.itemTitle}>{schedule.title}</span>}
-          </Link>
-        ))}
-      </ul>
+      <div className={s.scheduleList}>
+        <NavbarButton
+          isInteractive={false}
+          icon={<SchoolRoundedIcon className={s.light} />}
+          collapsed={isNavCollapsed}
+          text={'Преподаватели'}
+        />
+        <hr className={cn('hr')} />
+        <ul className={s.list}>
+          {MOCK_LIST_ITEMS.map(schedule => (
+            <Link className={s.itemLink} to={schedule.path}>
+              <div className={s.itemIcon}>{calculateIcon(schedule.title)}</div>
+              {!isNavCollapsed && <span className={s.itemTitle}>{schedule.title}</span>}
+            </Link>
+          ))}
+        </ul>
+      </div>
 
 
       <NavbarButton
