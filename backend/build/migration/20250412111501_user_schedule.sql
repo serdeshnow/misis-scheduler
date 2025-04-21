@@ -22,11 +22,15 @@ CREATE TABLE IF not exists schedule
 CREATE TABLE IF NOT EXISTS user_schedule
 (
     id_user varchar,
-    id_schedule bigint
+    id_schedule bigint,
+    is_main boolean
 );
 -- +goose StatementEnd
 
 -- +goose Down
 -- +goose StatementBegin
 SELECT 'down SQL query';
+drop table if exists user_schedule;
+drop table if exists schedule;
+drop table if exists users;
 -- +goose StatementEnd
