@@ -11,6 +11,7 @@ type Lessons struct {
 	Order     int      `json:"order"`
 	Week      int      `json:"week"`
 	Institute string   `json:"institute"`
+	Year      string   `json:"year"`
 	Group     []string `json:"group"`
 	Subgroup  []string `json:"subgroup"` // Что это null
 	Title     string   `json:"title"`
