@@ -16,24 +16,21 @@ type Schedule struct {
 }
 
 type Week struct {
-	Monday    Day `json:"monday"`
-	Tuesday   Day `json:"tuesday"`
-	Wednesday Day `json:"wednesday"`
-	Thursday  Day `json:"thursday"`
-	Friday    Day `json:"friday"`
-	Saturday  Day `json:"saturday"`
-}
-
-type Day struct {
-	Lessons []Lesson `json:"lessons"`
+	Monday    []Lesson `json:"monday"`
+	Tuesday   []Lesson `json:"tuesday"`
+	Wednesday []Lesson `json:"wednesday"`
+	Thursday  []Lesson `json:"thursday"`
+	Friday    []Lesson `json:"friday"`
+	Saturday  []Lesson `json:"saturday"`
 }
 
 type Lesson struct {
-	Subject  string    `json:"subject"`
-	Teacher  string    `json:"teacher"`
-	Group    string    `json:"group"`
-	Location string    `json:"location"`
-	Number   int       `json:"number"`
-	Start    time.Time `json:"start"`
-	End      time.Time `json:"end"`
+	Subject     string    `json:"subject"`
+	SubjectType string    `json:"subjectType"`
+	Teacher     string    `json:"teacher"`
+	Group       string    `json:"group"`
+	Location    string    `json:"location"`
+	Number      int       `json:"number"`
+	Start       time.Time `json:"start"`
+	End         time.Time `json:"end"`
 }

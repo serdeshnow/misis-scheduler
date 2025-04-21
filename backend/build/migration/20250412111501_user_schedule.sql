@@ -11,16 +11,23 @@ CREATE TABLE IF not exists schedule
     id        serial primary key,
     name      varchar,
     type      varchar,
-    monday    json,
-    tuesday   json,
-    wednesday json,
-    thursday  json,
-    friday    json,
-    saturday  json
+    mondayUp    json,
+    tuesdayUp   json,
+    wednesdayUp json,
+    thursdayUp  json,
+    fridayUp    json,
+    saturdayUp  json,
+    mondayDown    json,
+    tuesdayDown   json,
+    wednesdayDown json,
+    thursdayDown  json,
+    fridayDown    json,
+    saturdayDown  json
 );
 
 CREATE TABLE IF NOT EXISTS user_schedule
 (
+    name varchar,
     id_user varchar,
     id_schedule bigint,
     is_main boolean
